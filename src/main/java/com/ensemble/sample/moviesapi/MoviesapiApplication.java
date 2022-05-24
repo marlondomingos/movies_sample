@@ -10,7 +10,7 @@ public class MoviesapiApplication {
 	public static void main(String[] args) {
 		String url = "jdbc:mysql://localhost:3306/dbmovies";
 		String user = "root";
-		String password = "BROK123sonic";
+		String password = "root";
 		Flyway flyway = Flyway.configure().dataSource(url, user, password).load();
 		flyway.migrate();
 		SpringApplication.run(MoviesapiApplication.class, args);
